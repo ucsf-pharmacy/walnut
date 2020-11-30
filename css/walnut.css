@@ -1,7 +1,34 @@
-/* line 1, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/walnut/sass/walnut.scss */
 .media-library-add-form__preview {
   align-items: flex-start;
   background: unset;
 }
 
-/*# sourceMappingURL=walnut.css.map */
+.ief-entity-table td {
+  vertical-align: top;
+}
+
+.ief-entity-table input.button {
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+
+.ief-entity-table input.button:first-child {
+  margin-right: 1em;
+}
+
+.ief-entity-table .field--name-field-media-image img
+, .ief-entity-table .field--name-field-media-audio-file audio {
+  max-width: 150px;
+}
+
+.ief-entity-table .field--name-field-media-link {
+  word-break: break-all;
+}
+
+.content-header {
+  padding-top: 0;
+}
+
+.content-header .layout-container {
+  text-align: right;
+}

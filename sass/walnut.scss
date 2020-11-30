@@ -2,3 +2,30 @@
   align-items: flex-start;
   background: unset;
 }
+.ief-entity-table{
+  td{
+    vertical-align: top;
+  }
+  input.button{
+    margin-left: 0;
+    margin-bottom: 1em;
+    &:first-child{
+      margin-right: 1em;
+    }
+  }
+  .field--name-field-media-image img
+  ,.field--name-field-media-audio-file audio
+  {
+    max-width: 150px;
+  }
+  .field--name-field-media-link{
+    word-break: break-all;
+  }
+}
+.content-header{
+  padding-top: 0;
+  .layout-container{
+    text-align: right;
+  }
+}
+
