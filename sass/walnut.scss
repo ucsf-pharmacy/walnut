@@ -28,4 +28,10 @@
     text-align: right;
   }
 }
-
+.display-modes{
+  .block-system-main-block{
+    th:first-child{
+      width: 25ch;
+    }
+  }
+}
