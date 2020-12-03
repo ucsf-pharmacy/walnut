@@ -36,3 +36,37 @@
 .display-modes .block-system-main-block th:first-child {
   width: 25ch;
 }
+
+.node-event-form .edit-group-dates
+, .node-event-form .field--name-body
+, .node-event-form .field--name-field-event-moreinfo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.node-event-form #edit-field-event-location-0 {
+  padding: 0;
+  border: none;
+}
+
+.node-event-form #edit-field-event-location-0 legend {
+  display: none;
+}
+
+.node-event-form .form-item-field-event-location-0-title {
+  margin-bottom: 0;
+}
+
+.node-event-form #field-event-datetime-values th {
+  display: none;
+}
+
+.node-event-form #edit-field-event-moreinfo-wrapper {
+  border: 1px solid #c0c0c0;
+  padding: 0px 18px 6px;
+  background-color: #fcfcfa;
+}
+
+#edit-title-0-value {
+  font-size: 1.5em;
+}
