@@ -35,7 +35,9 @@
     }
   }
 }
-.node-event-form{
+.node-event-form
+,.node-event-edit-form
+{
   .edit-group-dates
   ,.field--name-body
   ,.field--name-field-event-moreinfo
@@ -46,9 +48,6 @@
   #edit-field-event-location-0{
     padding: 0;
     border: none;
-    legend{
-     display: none;
-    }
   }
   .form-item-field-event-location-0-title{
     margin-bottom: 0;
@@ -61,7 +60,57 @@
     padding: 0px 18px 6px;
     background-color: #fcfcfa;
   }
+  .edit-field-organization-wrapper{
+    margin-bottom: 3em;
+  }
+  fieldset#edit-field-event-location-0:not(.fieldgroup){
+    padding: 0;
+    border: none;
+    & > legend{
+      display: none;
+    }
+  }
+  .form-item-field-event-audience-0-value{
+    margin: 2.5em 0 2em;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    background-color: #f5f5f2;
+    border: 1px solid #bfbfba;
+  }
+  #field-event-datetime-values fieldset:not(.fieldgroup){
+    padding-top: 18px;
+  }
 }
 #edit-title-0-value{
   font-size: 1.5em;
+}
+.is-collapse-enabled .tabs{
+  max-height: unset;
+}
+.is-horizontal{
+  left: 4px;
+  width: calc( 100% - 4px );
+}
+.is-horizontal .tabs__tab.is-active
+, .is-horizontal .tabs.primary .tabs__tab.is-active
+, [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active{
+  border-bottom: 1px solid #fff;
+}
+.entity-meta{
+  margin: .75em 0;
+}
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  & + label{
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+.form-type-radio .description, .form-type-checkbox .description {
+  margin-left: 30px;
+}
+#edit-actions{
+  margin-top: 3em;
 }
