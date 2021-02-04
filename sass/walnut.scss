@@ -114,3 +114,31 @@ input[type='checkbox'] {
 #edit-actions{
   margin-top: 3em;
 }
+
+fieldset:not(.fieldgroup){
+  & > legend{
+    position: initial;
+  }
+  padding: 10px 18px 18px;
+}
+
+.layout-region{
+  & > .form-wrapper{
+    margin-bottom: 36px;
+  }
+}
+
+tr{
+  &.odd
+  ,&.even
+  {
+    .form-item{
+      &.text-format-wrapper
+      ,&.form-type-textarea
+      {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
