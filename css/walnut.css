@@ -192,4 +192,21 @@ tr.odd .form-item.text-format-wrapper, tr.odd .form-item.form-type-textarea, tr.
   margin-bottom: 0;
 }
 
+/* line 145, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.field--name-field-gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 148, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.field--name-field-gallery-items > .field__item {
+  max-width: 100px;
+  margin: 0 1px 1px 0;
+}
+
+/* line 154, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.media-library-item__preview .field--name-thumbnail {
+  line-height: .8;
+}
+
 /*# sourceMappingURL=walnut.css.map */

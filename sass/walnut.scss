@@ -142,3 +142,16 @@ tr{
   }
 }
 
+.field--name-field-gallery-items{
+  display: flex;
+  flex-wrap: wrap;
+  & > .field__item{
+    max-width: 100px;
+    margin: 0 1px 1px 0;
+  }
+}
+.media-library-item__preview{
+  .field--name-thumbnail{
+    line-height: .8;
+  }
+}
