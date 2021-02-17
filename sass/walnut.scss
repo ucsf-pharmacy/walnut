@@ -155,3 +155,36 @@ tr{
     line-height: .8;
   }
 }
+.form-url{
+  width: 100%;
+}
+.form-item-field-article-date-0-value-date
+,.form-item-field-article-image-0-filefield-remote-url
+{
+  margin: 0;
+}
+input.form-autocomplete
+,input.form-text
+,input.form-tel
+,input.form-email
+,input.form-url
+,input.form-search
+,input.form-number
+,input.form-color
+,input.form-file
+,input.form-date
+,input.form-time
+,textarea.form-textarea
+{
+  line-height: 1.45;
+}
+.form-item-field-article-image-0{
+  .description{
+    br{
+      display: inline;
+    }
+  }
+}
+.ief-entity-table th{
+  letter-spacing: 0.08em;
+}
