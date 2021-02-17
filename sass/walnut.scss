@@ -1,3 +1,10 @@
+body{
+  line-height: 1.45;
+  --form-field-border-color: #b8b8b8;
+  --gutter: 32px;
+  --gap: 16px;
+  --margin-fields: .75em;
+}
 .media-library-add-form__preview {
   align-items: flex-start;
   background: unset;
@@ -187,4 +194,23 @@ input.form-autocomplete
 }
 .ief-entity-table th{
   letter-spacing: 0.08em;
+}
+
+.js-form-item-field-article-image-0{
+  .image-widget{
+    border: 1px solid var(--form-field-border-color);
+    padding: var(--gap);
+  }
+  .image-widget-data{
+    width: 100%;
+    .file--image{
+      margin-bottom: var(--margin-fields);
+    }
+    .file-size{
+      margin-right: var(--gap);
+    }
+    .button{
+      margin-left: 0;
+    }
+  }
 }
