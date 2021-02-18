@@ -183,6 +183,7 @@ input.form-autocomplete
 ,input.form-time
 ,textarea.form-textarea
 {
+  width: 100%;
   line-height: 1.45;
 }
 .form-item-field-article-image-0{
@@ -195,22 +196,32 @@ input.form-autocomplete
 .ief-entity-table th{
   letter-spacing: 0.08em;
 }
-
-.js-form-item-field-article-image-0{
-  .image-widget{
-    border: 1px solid var(--form-field-border-color);
-    padding: var(--gap);
+.image-widget{
+  border: 1px solid var(--form-field-border-color);
+  padding: var(--gap);
+}
+.image-widget-data{
+  width: 100%;
+  .file--image{
+    margin-bottom: var(--margin-fields);
   }
-  .image-widget-data{
-    width: 100%;
-    .file--image{
-      margin-bottom: var(--margin-fields);
-    }
-    .file-size{
-      margin-right: var(--gap);
-    }
-    .button{
-      margin-left: 0;
+  .button{
+    margin-left: 0;
+  }
+}
+.file-size{
+  margin-right: var(--gap);
+}
+.ief-row-form{
+  .form-wrapper{
+    & > div > div:not(.container-inline){
+      margin-top: var(--gap);
+      &.form-type-date
+      ,&.form-textarea-wrapper
+      ,&.description
+      {
+        margin: 0;
+      }
     }
   }
 }
