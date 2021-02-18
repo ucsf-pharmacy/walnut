@@ -242,52 +242,46 @@ input.form-autocomplete
 , input.form-date
 , input.form-time
 , textarea.form-textarea {
-  width: 100%;
   line-height: 1.45;
 }
 
-/* line 191, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 190, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-article-image-0 .description br {
   display: inline;
 }
 
-/* line 196, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 195, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table th {
   letter-spacing: 0.08em;
 }
 
-/* line 199, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 198, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget {
   border: 1px solid var(--form-field-border-color);
   padding: var(--gap);
 }
 
 /* line 203, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
-.image-widget-data {
-  width: 100%;
-}
-
-/* line 205, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .file--image {
   margin-bottom: var(--margin-fields);
 }
 
-/* line 208, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 206, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .button {
   margin-left: 0;
 }
 
-/* line 212, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 210, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .file-size {
   margin-right: var(--gap);
 }
 
-/* line 217, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 215, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline) {
   margin-top: var(--gap);
 }
 
-/* line 219, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 217, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline).form-type-date, .ief-row-form .form-wrapper > div > div:not(.container-inline).form-textarea-wrapper, .ief-row-form .form-wrapper > div > div:not(.container-inline).description {
   margin: 0;
 }

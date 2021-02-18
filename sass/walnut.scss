@@ -183,7 +183,6 @@ input.form-autocomplete
 ,input.form-time
 ,textarea.form-textarea
 {
-  width: 100%;
   line-height: 1.45;
 }
 .form-item-field-article-image-0{
@@ -201,7 +200,6 @@ input.form-autocomplete
   padding: var(--gap);
 }
 .image-widget-data{
-  width: 100%;
   .file--image{
     margin-bottom: var(--margin-fields);
   }
