@@ -223,3 +223,10 @@ input.form-autocomplete
     }
   }
 }
+.node-form{
+  #edit-actions{
+    .button:not(.button--danger){
+      font-size: 1.5rem; // make certain buttons larger so they are easier to select
+    }
+  }
+}

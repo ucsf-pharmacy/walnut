@@ -286,4 +286,9 @@ input.form-autocomplete
   margin: 0;
 }
 
+/* line 228, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.node-form #edit-actions .button:not(.button--danger) {
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=walnut.css.map */
