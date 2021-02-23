@@ -11,25 +11,29 @@ body{
 
 
 
-// font setup and families
-@font-face{
-  font-family: 'Granjon';
-  src:url('../../laurel/webfonts/granjon/GranjonLTStd.eot');
-  src:url('../../laurel/webfonts/granjon/GranjonLTStd.eot?#iefix') format('embedded-opentype'),
-  url('../../laurel/webfonts/granjon/GranjonLTStd.woff') format('woff'),
-  url('../../laurel/webfonts/granjon/GranjonLTStd.ttf') format('truetype');
+// term reference tree
+.region-content ul.term-reference-tree-level
+,.term-reference-tree-level
+{
+  margin: 2px 0 0 -24px;
 }
-@font-face {font-family: 'HelvNeue45LR';src: url('../../laurel/webfonts/helv-neue/32CEE0_1_0.eot');src: url('../../laurel/webfonts/helv-neue/32CEE0_1_0.eot?#iefix') format('embedded-opentype'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.woff2') format('woff2'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.woff') format('woff'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.ttf') format('truetype');}
-@font-face {font-family: 'HelvNeue55RR';src: url('../../laurel/webfonts/helv-neue/32CEE0_4_0.eot');src: url('../../laurel/webfonts/helv-neue/32CEE0_4_0.eot?#iefix') format('embedded-opentype'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.woff2') format('woff2'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.woff') format('woff'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.ttf') format('truetype');}
-:root{
-  --font-granjon: Granjon, Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  --font-helv-neue-roman: HelveticaNeue, HelveticaNeueRoman, "HelveticaNeue-Roman", "Helvetica Neue Roman", HelveticaNeue-regular, TeXGyreHerosRegular, Helvetica, "HelvNeue55RR", "Helvetica Neue", Arial, Geneva, sans-serif;
-  --font-helv-neue-light: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelvNeue45LR", HelveticaNeue, "Helvetica Neue", TeXGyreHerosRegular, Helvetica, Arial, Geneva, sans-serif;
+.field--widget-term-reference-tree{
+  ul{
+    li{
+      margin-bottom: 2px;
+    }
+  }
+}
+.no-term-reference-tree-button {
+  background-color: transparent;
 }
 
 
 
 // content types and form displays
+.layout-region > .form-textarea-wrapper.field--name-title{
+  margin-bottom: 0;
+}
 .node-form{
   #edit-actions{
     .button:not(.button--danger){
@@ -39,16 +43,14 @@ body{
 }
 .form-item-title-0-value{
   input{
-    font-family: var(--font-granjon);
-    font-size: 2.5em;
+    font-size: 2em;
     padding: .1em .3em 0;
     width: 100%;
   }
 }
 .form-item-field-subtitle-0-value{
   input{
-    font-family: var(--font-helv-neue-light);
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: .05px;
     padding: 0 .3em;
     width: 100%;
@@ -56,8 +58,7 @@ body{
 }
 .form-item-body-0-summary{
   textarea{
-    font-family: var(--font-helv-neue-roman);
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 .node-event-form
@@ -205,7 +206,51 @@ tr{
     }
   }
 }
-
+.primary-media-and-post-type{
+  &:not(.fieldgroup){
+    padding: 0;
+    background-color: transparent;
+  }
+  border: none;
+  fieldset.form-wrapper:not(.fieldgroup)
+  ,fieldset.form-item
+  {
+    margin: 0 0 1em 0;
+  }
+  & > legend{
+    display: none; // label for fieldset group
+  }
+  & > .fieldset-wrapper{
+    column-gap: calc( var(--gutter) * 2 );
+    display: flex;
+    flex-wrap: wrap;
+    .media-library-widget__toggle-weight
+    ,.description
+    {
+      display: none;
+    }
+    .media-library-selection{
+      margin: 0;
+    }
+    .media-library-item__remove{
+      top: 16px;
+      right: 0;
+    }
+    .media-library-item__preview{
+      padding-bottom: 0;
+    }
+    .media-library-item--grid{
+      padding: 0;
+      width: 100%;
+      .field--name-thumbnail{
+        background: transparent;
+      }
+      &:before{
+        border: none;
+      }
+    }
+  }
+}
 
 
 // ief
