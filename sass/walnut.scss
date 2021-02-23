@@ -1,45 +1,63 @@
-body{
-  line-height: 1.45;
+// settins and defaults
+:root{
   --form-field-border-color: #b8b8b8;
   --gutter: 32px;
   --gap: 16px;
   --margin-fields: .75em;
 }
-.media-library-add-form__preview {
-  align-items: flex-start;
-  background: unset;
+body{
+  line-height: 1.45;
 }
-.ief-entity-table{
-  td{
-    vertical-align: top;
-  }
-  input.button{
-    margin-left: 0;
-    margin-bottom: 1em;
-    &:first-child{
-      margin-right: 1em;
+
+
+
+// font setup and families
+@font-face{
+  font-family: 'Granjon';
+  src:url('../../laurel/webfonts/granjon/GranjonLTStd.eot');
+  src:url('../../laurel/webfonts/granjon/GranjonLTStd.eot?#iefix') format('embedded-opentype'),
+  url('../../laurel/webfonts/granjon/GranjonLTStd.woff') format('woff'),
+  url('../../laurel/webfonts/granjon/GranjonLTStd.ttf') format('truetype');
+}
+@font-face {font-family: 'HelvNeue45LR';src: url('../../laurel/webfonts/helv-neue/32CEE0_1_0.eot');src: url('../../laurel/webfonts/helv-neue/32CEE0_1_0.eot?#iefix') format('embedded-opentype'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.woff2') format('woff2'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.woff') format('woff'),url('../../laurel/webfonts/helv-neue/32CEE0_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HelvNeue55RR';src: url('../../laurel/webfonts/helv-neue/32CEE0_4_0.eot');src: url('../../laurel/webfonts/helv-neue/32CEE0_4_0.eot?#iefix') format('embedded-opentype'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.woff2') format('woff2'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.woff') format('woff'),url('../../laurel/webfonts/helv-neue/32CEE0_4_0.ttf') format('truetype');}
+:root{
+  --font-granjon: Granjon, Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  --font-helv-neue-roman: HelveticaNeue, HelveticaNeueRoman, "HelveticaNeue-Roman", "Helvetica Neue Roman", HelveticaNeue-regular, TeXGyreHerosRegular, Helvetica, "HelvNeue55RR", "Helvetica Neue", Arial, Geneva, sans-serif;
+  --font-helv-neue-light: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelvNeue45LR", HelveticaNeue, "Helvetica Neue", TeXGyreHerosRegular, Helvetica, Arial, Geneva, sans-serif;
+}
+
+
+
+// content types and form displays
+.node-form{
+  #edit-actions{
+    .button:not(.button--danger){
+      font-size: 1.5rem; // make certain buttons larger so they are easier to select
     }
   }
-  .field--name-field-media-image img
-  ,.field--name-field-media-audio-file audio
-  {
-    max-width: 150px;
-  }
-  .field--name-field-media-link{
-    word-break: break-all;
+}
+.form-item-title-0-value{
+  input{
+    font-family: var(--font-granjon);
+    font-size: 2.5em;
+    padding: .1em .3em 0;
+    width: 100%;
   }
 }
-.content-header{
-  padding-top: 0;
-  .layout-container{
-    text-align: right;
+.form-item-field-subtitle-0-value{
+  input{
+    font-family: var(--font-helv-neue-light);
+    font-size: 2em;
+    letter-spacing: .05px;
+    padding: 0 .3em;
+    width: 100%;
   }
 }
-.display-modes{
-  .block-system-main-block{
-    th:first-child{
-      width: 25ch;
-    }
+.form-item-body-0-summary{
+  textarea{
+    font-family: var(--font-helv-neue-roman);
+    font-size: 1.5em;
   }
 }
 .node-event-form
@@ -88,23 +106,9 @@ body{
     padding-top: 18px;
   }
 }
-#edit-title-0-value{
-  font-size: 1.5em;
-}
-.is-collapse-enabled .tabs{
-  max-height: unset;
-}
-.is-horizontal{
-  left: 4px;
-  width: calc( 100% - 4px );
-}
-.is-horizontal .tabs__tab.is-active
-, .is-horizontal .tabs.primary .tabs__tab.is-active
-, [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active{
-  border-bottom: 1px solid #fff;
-}
-.entity-meta{
-  margin: .75em 0;
+.media-library-add-form__preview {
+  align-items: flex-start;
+  background: unset;
 }
 input[type='checkbox'] {
   width: 20px;
@@ -121,34 +125,12 @@ input[type='checkbox'] {
 #edit-actions{
   margin-top: 3em;
 }
-
 fieldset:not(.fieldgroup){
   & > legend{
     position: initial;
   }
   padding: 10px 18px 18px;
 }
-
-.layout-region{
-  & > .form-wrapper{
-    margin-bottom: 36px;
-  }
-}
-
-tr{
-  &.odd
-  ,&.even
-  {
-    .form-item{
-      &.text-format-wrapper
-      ,&.form-type-textarea
-      {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
 .field--name-field-gallery-items{
   display: flex;
   flex-wrap: wrap;
@@ -192,9 +174,6 @@ input.form-autocomplete
     }
   }
 }
-.ief-entity-table th{
-  letter-spacing: 0.08em;
-}
 .image-widget{
   border: 1px solid var(--form-field-border-color);
   padding: var(--gap);
@@ -210,6 +189,49 @@ input.form-autocomplete
 .file-size{
   margin-right: var(--gap);
 }
+.entity-meta{
+  margin: .75em 0;
+}
+tr{
+  &.odd
+  ,&.even
+  {
+    .form-item{
+      &.text-format-wrapper
+      ,&.form-type-textarea
+      {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+// ief
+.ief-entity-table{
+  th{
+    letter-spacing: 0.08em;
+  }
+  td{
+    vertical-align: top;
+  }
+  input.button{
+    margin-left: 0;
+    margin-bottom: 1em;
+    &:first-child{
+      margin-right: 1em;
+    }
+  }
+  .field--name-field-media-image img
+  ,.field--name-field-media-audio-file audio
+  {
+    max-width: 150px;
+  }
+  .field--name-field-media-link{
+    word-break: break-all;
+  }
+}
 .ief-row-form{
   .form-wrapper{
     & > div > div:not(.container-inline){
@@ -223,10 +245,45 @@ input.form-autocomplete
     }
   }
 }
-.node-form{
-  #edit-actions{
-    .button:not(.button--danger){
-      font-size: 1.5rem; // make certain buttons larger so they are easier to select
+
+
+
+// regions
+.content-header{
+  padding-top: 0; // save wasted space
+  .layout-container{
+    text-align: right; // put search box on the right
+  }
+}
+.layout-region{
+  & > .form-wrapper{
+    margin-bottom: 36px;
+  }
+}
+
+
+
+.display-modes{
+  .block-system-main-block{
+    th:first-child{
+      width: 25ch;
     }
   }
 }
+
+
+
+// tabs
+.is-collapse-enabled .tabs{
+  max-height: unset;
+}
+.is-horizontal{
+  left: 4px;
+  width: calc( 100% - 4px );
+}
+.is-horizontal .tabs__tab.is-active
+, .is-horizontal .tabs.primary .tabs__tab.is-active
+, [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active{
+  border-bottom: 1px solid #fff;
+}
+
