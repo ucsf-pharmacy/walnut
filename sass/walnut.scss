@@ -1,4 +1,4 @@
-// settins and defaults
+// settings and defaults
 :root{
   --form-field-border-color: #b8b8b8;
   --gutter: 32px;
@@ -31,8 +31,10 @@ body{
 
 
 // content types and form displays
-.layout-region > .form-textarea-wrapper.field--name-title{
-  margin-bottom: 0;
+.node-post-edit-form{
+  .layout-region > .field--name-title{
+    margin-bottom: 0; // keep title and subtitle close together
+  }
 }
 .node-form{
   #edit-actions{
