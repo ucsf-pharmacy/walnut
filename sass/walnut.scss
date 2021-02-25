@@ -31,7 +31,9 @@ body{
 
 
 // content types and form displays
-.node-post-edit-form{
+.node-post-edit-form
+,.node-external-post-edit-form
+{
   .layout-region > .field--name-title{
     margin-bottom: 0; // keep title and subtitle close together
   }
