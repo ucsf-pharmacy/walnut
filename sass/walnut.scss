@@ -1,4 +1,8 @@
 // settings and defaults
+$color-link-blue:                 #0071ad;
+$color-blue-10:                   #e8f4fa;
+
+
 :root{
   --form-field-border-color: #b8b8b8;
   --gutter: 32px;
@@ -32,13 +36,18 @@ body{
 
 // content types and form displays
 
-  // keep title and subtitle close together
+  // keep certain fields close together because they are related or work well as a group
   .node-post-edit-form
+  ,.node-event-edit-form
   ,.node-external-post-edit-form
   ,.node-in-the-news-edit-form
   {
-    .layout-region > .field--name-title{
-      margin-bottom: 0;
+    .layout-region{
+      & > .field--name-title
+      ,& > .field--name-field-event-series
+      {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -114,10 +123,28 @@ body{
   #field-event-datetime-values fieldset:not(.fieldgroup){
     padding-top: 18px;
   }
+  .form-item-field-event-audience-0-value{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
 }
 .media-library-add-form__preview {
   align-items: flex-start;
   background: unset;
+}
+.media-library-item--grid{
+  &:before{
+    border: none;
+  }
+  article{
+    border: 1px solid var(--form-field-border-color);
+    margin-bottom: 4px;
+    & > .media-library-item__preview{
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
 }
 input[type='checkbox'] {
   width: 20px;
@@ -214,6 +241,52 @@ tr{
     }
   }
 }
+
+// hide item weight info where irrelevant because there is only ever one item
+.primary-media-and-post-type
+,.media-library-widget
+{
+  & > .fieldset-wrapper{
+    .media-library-widget__toggle-weight{
+      display: none;
+    }
+  }
+}
+
+// resolves too much vertical padding in .media-library-widget
+fieldset:not(.fieldgroup).media-library-widget{
+  padding: 0 18px;
+}
+
+// resolves incorrect position of remove button (X) for media items
+.primary-media-and-post-type{
+  & > .fieldset-wrapper{
+    .media-library-item__remove{
+      top: 16px;
+      right: 0;
+    }
+  }
+}
+.media-library-widget{
+  & > .fieldset-wrapper{
+    .media-library-item__remove{
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+
+// hide "The maximum number of media items have been selected."
+.primary-media-and-post-type
+,.media-library-widget
+{
+  & > .fieldset-wrapper{
+    .description{
+      display: none;
+    }
+  }
+}
+
 .primary-media-and-post-type{
   &:not(.fieldgroup){
     padding: 0;
@@ -232,17 +305,8 @@ tr{
     column-gap: calc( var(--gutter) * 2 );
     display: flex;
     flex-wrap: wrap;
-    .media-library-widget__toggle-weight
-    ,.description
-    {
-      display: none;
-    }
     .media-library-selection{
       margin: 0;
-    }
-    .media-library-item__remove{
-      top: 16px;
-      right: 0;
     }
     .media-library-item__preview{
       padding-bottom: 0;
@@ -340,3 +404,8 @@ tr{
   border-bottom: 1px solid #fff;
 }
 
+
+// tables
+tbody tr:hover{
+  background-color: $color-blue-10;
+}
