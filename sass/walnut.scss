@@ -28,6 +28,9 @@ body{
     }
   }
 }
+.term-reference-tree-button {
+  visibility: hidden;
+}
 .no-term-reference-tree-button {
   background-color: transparent;
 }
@@ -302,9 +305,19 @@ fieldset:not(.fieldgroup).media-library-widget{
     display: none; // label for fieldset group
   }
   & > .fieldset-wrapper{
-    column-gap: calc( var(--gutter) * 2 );
+    gap: var(--gutter);
     display: flex;
     flex-wrap: wrap;
+    .field--name-field-caption{
+      flex-grow: 1;
+      .text-format-wrapper{
+        margin: 0 calc( var(--gutter) * 2 ) 0 0;
+        margin: 0;
+      }
+      .form-item-field-caption-0-value{
+        margin-top: 0;
+      }
+    }
     .media-library-selection{
       margin: 0;
     }
@@ -408,4 +421,18 @@ fieldset:not(.fieldgroup).media-library-widget{
 // tables
 tbody tr:hover{
   background-color: $color-blue-10;
+}
+
+.field--widget-media-library-widget{
+  fieldset:not(.fieldgroup){
+    border: none;
+    &.media-library-widget{
+      padding: 0;
+      margin-bottom: 0;
+    }
+    & > legend{
+      text-transform: none;
+      letter-spacing: 0;
+    }
+  }
 }
