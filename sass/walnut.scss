@@ -337,7 +337,6 @@ fieldset:not(.fieldgroup).media-library-widget{
   }
 }
 
-
 // ief
 .ief-entity-table{
   th{
@@ -348,7 +347,7 @@ fieldset:not(.fieldgroup).media-library-widget{
   }
   input.button{
     margin-left: 0;
-    margin-bottom: 1em;
+    margin-bottom: 0;
     &:first-child{
       margin-right: 1em;
     }
@@ -422,6 +421,15 @@ fieldset:not(.fieldgroup).media-library-widget{
 tbody tr:hover{
   background-color: $color-blue-10;
 }
+.field-multiple-table{
+  tr{
+    td:nth-child(2)
+    ,td:nth-child(3)
+    {
+      padding-right: 0;
+    }
+  }
+}
 
 .field--widget-media-library-widget{
   fieldset:not(.fieldgroup){
@@ -436,3 +444,7 @@ tbody tr:hover{
     }
   }
 }
+.media-form .field--name-status {
+  margin-top: 0;
+}
+
