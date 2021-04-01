@@ -246,7 +246,7 @@ tr{
 }
 
 // hide item weight info where irrelevant because there is only ever one item
-.primary-media-and-post-type
+.primary-media-flex-group
 ,.media-library-widget
 {
   & > .fieldset-wrapper{
@@ -262,7 +262,7 @@ fieldset:not(.fieldgroup).media-library-widget{
 }
 
 // resolves incorrect position of remove button (X) for media items
-.primary-media-and-post-type{
+.primary-media-flex-group{
   & > .fieldset-wrapper{
     .media-library-item__remove{
       top: 16px;
@@ -280,7 +280,7 @@ fieldset:not(.fieldgroup).media-library-widget{
 }
 
 // hide "The maximum number of media items have been selected."
-.primary-media-and-post-type
+.primary-media-flex-group
 ,.media-library-widget
 {
   & > .fieldset-wrapper{
@@ -290,7 +290,7 @@ fieldset:not(.fieldgroup).media-library-widget{
   }
 }
 
-.primary-media-and-post-type{
+.primary-media-flex-group{
   &:not(.fieldgroup){
     padding: 0;
     background-color: transparent;
