@@ -1,6 +1,8 @@
 // settings and defaults
 $color-link-blue:                 #0071ad;
 $color-blue-10:                   #e8f4fa;
+$color-text-gray:                 #767676; // lightest accessible gray on white
+$color-black-77:                  #3b3b3b;
 
 
 :root{
@@ -39,6 +41,56 @@ body{
 
 // content types and form displays
 
+.user-logged-in{
+  .page-title{
+    word-break: break-word;
+    line-height: 1.4;
+  }
+}
+label{
+  margin: 0.5em 0;
+}
+.form-item{
+  margin: 0.5em 0 3em;
+}
+ul.tips
+,div.description
+,.form-item .description
+{
+  color: $color-black-77;
+  margin: .25em 0;
+}
+[id*="description"]{
+  margin: .25em 0;
+}
+.field-multiple-table{
+  thead
+  ,tbody{
+    tr{
+      border-bottom: none;
+    }
+  }
+  thead{
+    th{
+      color: $color-black-77;
+      text-transform: none;
+      padding: 0.5em 0;
+      background: inherit;
+      border: none;
+    }
+  }
+}
+.layout-region-node-footer__content{
+  border-top: none;
+}
+
+#node-ucsfpharmacy-person-edit-form{
+  .form-item{
+    label+div{
+      color: $color-text-gray;
+    }
+  }
+}
   // keep certain fields close together because they are related or work well as a group
   .node-post-edit-form
   ,.node-event-edit-form
@@ -213,16 +265,32 @@ input.form-autocomplete
     }
   }
 }
+.image-preview{
+  padding: 0 32px 32px 0;
+}
 .image-widget{
-  border: 1px solid var(--form-field-border-color);
-  padding: var(--gap);
+  border: none;
+  padding: 0;
 }
 .image-widget-data{
+  .form-item-field-media-image-0-alt{
+    width: inherit;
+    max-width: 70ch;
+  }
   .file--image{
     margin-bottom: var(--margin-fields);
   }
   .button{
     margin-left: 0;
+  }
+}
+.image-data__crop-wrapper{
+  border: none;
+  summary{
+    display: none;
+  }
+  .seven-details__wrapper{
+    padding: 0;
   }
 }
 .file-size{
@@ -415,7 +483,17 @@ fieldset:not(.fieldgroup).media-library-widget{
 , [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active{
   border-bottom: 1px solid #fff;
 }
-
+.vertical-tabs__menu-item a{
+  padding: 10px 15px;
+  line-height: 1.4;
+}
+.vertical-tabs__menu-item.is-selected a{
+  padding-left: 15px;
+  font-size: 1.2em;
+}
+.vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title{
+  color: $color-black-77;
+}
 
 // tables
 tbody tr:hover{
