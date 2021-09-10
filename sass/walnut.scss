@@ -53,6 +53,9 @@ label{
 .form-item{
   margin: 0.5em 0 3em;
 }
+#search-block-form .form-item{
+  margin: 0.5em 0;
+}
 ul.tips
 ,div.description
 ,.form-item .description
@@ -212,9 +215,6 @@ input[type='checkbox'] {
 }
 .form-type-radio .description, .form-type-checkbox .description {
   margin-left: 30px;
-}
-#edit-actions{
-  margin-top: 3em;
 }
 fieldset:not(.fieldgroup){
   & > legend{
@@ -448,9 +448,6 @@ fieldset:not(.fieldgroup).media-library-widget{
 // regions
 .content-header{
   padding-top: 0; // save wasted space
-  .layout-container{
-    text-align: right; // put search box on the right
-  }
 }
 .layout-region{
   & > .form-wrapper{
