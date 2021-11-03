@@ -44,16 +44,27 @@ label {
 }
 
 /* line 53, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
-.form-item {
-  margin: 0.5em 0 3em;
+#edit-actions {
+  margin-bottom: 0;
 }
 
 /* line 56, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.form--inline
+, #edit-header {
+  margin-bottom: 2em;
+}
+
+/* line 61, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.form-item {
+  margin: 0.5em 0;
+}
+
+/* line 64, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #search-block-form .form-item {
   margin: 0.5em 0;
 }
 
-/* line 59, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 67, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 ul.tips
 , div.description
 , .form-item .description {
@@ -61,18 +72,18 @@ ul.tips
   margin: .25em 0;
 }
 
-/* line 66, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 74, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 [id*="description"] {
   margin: .25em 0;
 }
 
-/* line 72, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 80, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table thead
 tr, .field-multiple-table tbody tr {
   border-bottom: none;
 }
 
-/* line 77, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 85, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table thead th {
   color: #3b3b3b;
   text-transform: none;
@@ -81,17 +92,17 @@ tr, .field-multiple-table tbody tr {
   border: none;
 }
 
-/* line 86, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 94, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region-node-footer__content {
   border-top: none;
 }
 
-/* line 92, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 100, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #node-ucsfpharmacy-person-edit-form .form-item label + div {
   color: #767676;
 }
 
-/* line 104, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 112, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-post-edit-form
 .layout-region > .field--name-title
 , .node-post-edit-form
@@ -106,19 +117,19 @@ tr, .field-multiple-table tbody tr {
   margin-bottom: 0;
 }
 
-/* line 114, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 122, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-form #edit-actions .button:not(.button--danger) {
   font-size: 1.5rem;
 }
 
-/* line 120, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 128, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-title-0-value input {
   font-size: 2em;
   padding: .1em .3em 0;
   width: 100%;
 }
 
-/* line 127, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 135, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-subtitle-0-value input {
   font-size: 1.5em;
   letter-spacing: .05px;
@@ -126,12 +137,12 @@ tr, .field-multiple-table tbody tr {
   width: 100%;
 }
 
-/* line 135, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 143, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-body-0-summary textarea {
   font-size: 1.25em;
 }
 
-/* line 142, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 150, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .edit-group-dates
 , .node-event-form
@@ -144,26 +155,26 @@ tr, .field-multiple-table tbody tr {
   margin-bottom: 2em;
 }
 
-/* line 149, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 157, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #edit-field-event-location-0, .node-event-edit-form #edit-field-event-location-0 {
   padding: 0;
   border: none;
 }
 
-/* line 153, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 161, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-location-0-title, .node-event-edit-form .form-item-field-event-location-0-title {
   margin-bottom: 0;
 }
 
-/* line 156, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 164, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #field-event-datetime-values th, .node-event-edit-form #field-event-datetime-values th {
   display: none;
 }
 
-/* line 159, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 167, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #edit-field-event-moreinfo-wrapper, .node-event-edit-form #edit-field-event-moreinfo-wrapper {
   border: 1px solid #c0c0c0;
@@ -171,26 +182,26 @@ tr, .field-multiple-table tbody tr {
   background-color: #fcfcfa;
 }
 
-/* line 164, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 172, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .edit-field-organization-wrapper, .node-event-edit-form .edit-field-organization-wrapper {
   margin-bottom: 3em;
 }
 
-/* line 167, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 175, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 fieldset#edit-field-event-location-0:not(.fieldgroup), .node-event-edit-form fieldset#edit-field-event-location-0:not(.fieldgroup) {
   padding: 0;
   border: none;
 }
 
-/* line 170, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 178, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit-form fieldset#edit-field-event-location-0:not(.fieldgroup) > legend {
   display: none;
 }
 
-/* line 174, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 182, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-audience-0-value, .node-event-edit-form .form-item-field-event-audience-0-value {
   margin: 2.5em 0 2em;
@@ -200,13 +211,13 @@ fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit
   border: 1px solid #bfbfba;
 }
 
-/* line 181, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 189, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #field-event-datetime-values fieldset:not(.fieldgroup), .node-event-edit-form #field-event-datetime-values fieldset:not(.fieldgroup) {
   padding-top: 18px;
 }
 
-/* line 184, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 192, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-audience-0-value, .node-event-edit-form .form-item-field-event-audience-0-value {
   border: none;
@@ -214,86 +225,86 @@ fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit
   background-color: transparent;
 }
 
-/* line 190, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 198, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-add-form__preview {
   align-items: flex-start;
   background: unset;
 }
 
-/* line 195, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 203, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid:before {
   border: none;
 }
 
-/* line 198, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 206, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid article {
   border: 1px solid var(--form-field-border-color);
   margin-bottom: 4px;
 }
 
-/* line 201, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 209, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid article > .media-library-item__preview {
   margin-bottom: 0;
   padding: 0;
 }
 
-/* line 207, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 215, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input[type='checkbox'] {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
 
-/* line 211, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 219, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input[type='checkbox'] + label {
   vertical-align: middle;
   margin-left: 5px;
 }
 
-/* line 216, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 224, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-type-radio .description, .form-type-checkbox .description {
   margin-left: 30px;
 }
 
-/* line 219, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 227, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup) {
   padding: 10px 18px 18px;
 }
 
-/* line 220, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 228, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup) > legend {
   position: initial;
 }
 
-/* line 225, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 233, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--name-field-gallery-items {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 228, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 236, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--name-field-gallery-items > .field__item {
   max-width: 100px;
   margin: 0 1px 1px 0;
 }
 
-/* line 234, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 242, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item__preview .field--name-thumbnail {
   line-height: .8;
 }
 
-/* line 238, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 246, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-url {
   width: 100%;
 }
 
-/* line 241, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 249, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-article-date-0-value-date
 , .form-item-field-article-image-0-filefield-remote-url {
   margin: 0;
 }
 
-/* line 246, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 254, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input.form-autocomplete
 , input.form-text
 , input.form-tel
@@ -309,291 +320,291 @@ input.form-autocomplete
   line-height: 1.45;
 }
 
-/* line 263, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 271, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-article-image-0 .description br {
   display: inline;
 }
 
-/* line 268, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 276, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-preview {
   padding: 0 32px 32px 0;
 }
 
-/* line 271, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 279, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget {
   border: none;
   padding: 0;
 }
 
-/* line 276, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 284, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .form-item-field-media-image-0-alt {
   width: inherit;
   max-width: 70ch;
 }
 
-/* line 280, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 288, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .file--image {
   margin-bottom: var(--margin-fields);
 }
 
-/* line 283, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 291, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .button {
   margin-left: 0;
 }
 
-/* line 287, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 295, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper {
   border: none;
 }
 
-/* line 289, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 297, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper summary {
   display: none;
 }
 
-/* line 292, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 300, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper .seven-details__wrapper {
   padding: 0;
 }
 
-/* line 296, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 304, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .file-size {
   margin-right: var(--gap);
 }
 
-/* line 299, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 307, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .entity-meta {
   margin: .75em 0;
 }
 
-/* line 307, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 315, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 tr.odd .form-item.text-format-wrapper, tr.odd .form-item.form-type-textarea, tr.even .form-item.text-format-wrapper, tr.even .form-item.form-type-textarea {
   margin-bottom: 0;
 }
 
-/* line 321, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 329, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group
 >
 .fieldset-wrapper .media-library-widget__toggle-weight, .media-library-widget > .fieldset-wrapper .media-library-widget__toggle-weight {
   display: none;
 }
 
-/* line 328, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 336, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup).media-library-widget {
   padding: 0 18px;
 }
 
-/* line 335, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 343, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item__remove {
   top: 16px;
   right: 0;
 }
 
-/* line 343, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 351, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-widget > .fieldset-wrapper .media-library-item__remove {
   top: 10px;
   right: 10px;
 }
 
-/* line 355, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 363, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group
 >
 .fieldset-wrapper .description, .media-library-widget > .fieldset-wrapper .description {
   display: none;
 }
 
-/* line 361, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 369, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group {
   border: none;
 }
 
-/* line 362, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 370, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group:not(.fieldgroup) {
   padding: 0;
   background-color: transparent;
 }
 
-/* line 367, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 375, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group fieldset.form-wrapper:not(.fieldgroup)
 , .primary-media-flex-group fieldset.form-item {
   margin: 0 0 1em 0;
 }
 
-/* line 372, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 380, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > legend {
   display: none;
 }
 
-/* line 375, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 383, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper {
   gap: var(--gutter);
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 379, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 387, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .field--name-field-caption {
   flex-grow: 1;
 }
 
-/* line 381, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 389, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .field--name-field-caption .text-format-wrapper {
   margin: 0 calc( var(--gutter) * 2) 0 0;
   margin: 0;
 }
 
-/* line 385, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 393, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .field--name-field-caption .form-item-field-caption-0-value {
   margin-top: 0;
 }
 
-/* line 389, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 397, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-selection {
   margin: 0;
 }
 
-/* line 392, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 400, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item__preview {
   padding-bottom: 0;
 }
 
-/* line 395, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 403, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item--grid {
   padding: 0;
   width: 100%;
 }
 
-/* line 398, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 406, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item--grid .field--name-thumbnail {
   background: transparent;
 }
 
-/* line 401, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 409, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item--grid:before {
   border: none;
 }
 
-/* line 410, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 418, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table th {
   letter-spacing: 0.08em;
 }
 
-/* line 413, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 421, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table td {
   vertical-align: top;
 }
 
-/* line 416, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 424, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table input.button {
   margin-left: 0;
   margin-bottom: 0;
 }
 
-/* line 419, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 427, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table input.button:first-child {
   margin-right: 1em;
 }
 
-/* line 423, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 431, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table .field--name-field-media-image img
 , .ief-entity-table .field--name-field-media-audio-file audio {
   max-width: 150px;
 }
 
-/* line 428, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 436, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table .field--name-field-media-link {
   word-break: break-all;
 }
 
-/* line 434, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 442, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline) {
   margin-top: var(--gap);
 }
 
-/* line 436, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 444, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline).form-type-date, .ief-row-form .form-wrapper > div > div:not(.container-inline).form-textarea-wrapper, .ief-row-form .form-wrapper > div > div:not(.container-inline).description {
   margin: 0;
 }
 
-/* line 449, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 457, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .content-header {
   padding-top: 0;
 }
 
-/* line 453, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 461, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region > .form-wrapper {
   margin-bottom: 36px;
 }
 
-/* line 462, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 470, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .display-modes .block-system-main-block th:first-child {
   width: 25ch;
 }
 
-/* line 471, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 479, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-collapse-enabled .tabs {
   max-height: unset;
 }
 
-/* line 474, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 482, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-horizontal {
   left: 4px;
   width: calc( 100% - 4px);
 }
 
-/* line 478, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 486, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-horizontal .tabs__tab.is-active
 , .is-horizontal .tabs.primary .tabs__tab.is-active
 , [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active {
   border-bottom: 1px solid #fff;
 }
 
-/* line 483, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 491, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item a {
   padding: 10px 15px;
   line-height: 1.4;
 }
 
-/* line 487, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 495, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item.is-selected a {
   padding-left: 15px;
   font-size: 1.2em;
 }
 
-/* line 491, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 499, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title {
   color: #3b3b3b;
 }
 
-/* line 496, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 504, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 tbody tr:hover {
   background-color: #e8f4fa;
 }
 
-/* line 501, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 509, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table tr td:nth-child(2)
 , .field-multiple-table tr td:nth-child(3) {
   padding-right: 0;
 }
 
-/* line 510, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 518, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup) {
   border: none;
 }
 
-/* line 512, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 520, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup).media-library-widget {
   padding: 0;
   margin-bottom: 0;
 }
 
-/* line 516, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 524, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup) > legend {
   text-transform: none;
   letter-spacing: 0;
 }
 
-/* line 522, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 530, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-form .field--name-status {
   margin-top: 0;
 }

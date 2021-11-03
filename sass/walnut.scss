@@ -50,8 +50,16 @@ body{
 label{
   margin: 0.5em 0;
 }
+#edit-actions{
+  margin-bottom: 0;
+}
+.form--inline
+,#edit-header
+{
+  margin-bottom: 2em;
+}
 .form-item{
-  margin: 0.5em 0 3em;
+  margin: 0.5em 0;
 }
 #search-block-form .form-item{
   margin: 0.5em 0;
