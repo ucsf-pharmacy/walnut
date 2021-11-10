@@ -531,7 +531,7 @@ tbody tr:hover{
   margin-top: 0;
 }
 
-#field-event-audience-values{
+[id^="field-event-audience-values"]{
   &.field-multiple-table{
     td{
       padding: 5px 6px;
