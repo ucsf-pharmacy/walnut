@@ -609,4 +609,16 @@ tbody tr:hover {
   margin-top: 0;
 }
 
+/* line 536, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#field-event-audience-values.field-multiple-table td {
+  padding: 5px 6px;
+}
+
+/* line 539, ../../../../../Users/frankfarm/Documents/Git/d8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#field-event-audience-values.field-multiple-table tr.odd .form-item
+, #field-event-audience-values.field-multiple-table tr.even .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=walnut.css.map */

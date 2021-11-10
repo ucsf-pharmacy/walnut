@@ -530,3 +530,17 @@ tbody tr:hover{
 .media-form .field--name-status {
   margin-top: 0;
 }
+
+#field-event-audience-values{
+  &.field-multiple-table{
+    td{
+      padding: 5px 6px;
+    }
+    tr.odd .form-item
+    ,tr.even .form-item
+    {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+  }
+}
