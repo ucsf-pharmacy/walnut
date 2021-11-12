@@ -305,7 +305,14 @@ input.form-autocomplete
   margin-right: var(--gap);
 }
 .entity-meta{
-  margin: .75em 0;
+  // removed to resolve vertical tabs problem on http://d8.docksal.site/feed/add/node_event
+  // margin: .75em 0;
+}
+.entity-meta__header
+,.entity-meta .seven-details
+{
+  border: none;
+  background-image: none;
 }
 tr{
   &.odd
