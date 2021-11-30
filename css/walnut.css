@@ -625,4 +625,72 @@ tbody tr:hover {
   margin-top: 10px;
 }
 
+/* line 563, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+[id] {
+  scroll-margin-top: 2ex;
+}
+
+/* line 572, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-titles
+.seven-details__wrapper > *, #tab-person-type-and-dept
+.seven-details__wrapper > *, #tab-education-and-training
+.seven-details__wrapper > *, #tab-expertise
+.seven-details__wrapper > *, #tab-affiliations-and-links .seven-details__wrapper > * {
+  margin: 3em 0;
+  padding: .25em 1em;
+  border: 1px solid #b8b8b8;
+}
+
+/* line 576, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-titles
+.seven-details__wrapper > *:first-child, #tab-person-type-and-dept
+.seven-details__wrapper > *:first-child, #tab-education-and-training
+.seven-details__wrapper > *:first-child, #tab-expertise
+.seven-details__wrapper > *:first-child, #tab-affiliations-and-links .seven-details__wrapper > *:first-child {
+  margin-top: 1em;
+}
+
+/* line 579, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-titles
+.seven-details__wrapper > *:last-child, #tab-person-type-and-dept
+.seven-details__wrapper > *:last-child, #tab-education-and-training
+.seven-details__wrapper > *:last-child, #tab-expertise
+.seven-details__wrapper > *:last-child, #tab-affiliations-and-links .seven-details__wrapper > *:last-child {
+  margin-bottom: 1em;
+}
+
+/* line 587, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-titles
+.field-multiple-table tr.odd
+.form-item, #tab-titles
+.field-multiple-table tr.even .form-item, #tab-person-type-and-dept
+.field-multiple-table tr.odd
+.form-item, #tab-person-type-and-dept
+.field-multiple-table tr.even .form-item, #tab-education-and-training
+.field-multiple-table tr.odd
+.form-item, #tab-education-and-training
+.field-multiple-table tr.even .form-item, #tab-expertise
+.field-multiple-table tr.odd
+.form-item, #tab-expertise
+.field-multiple-table tr.even .form-item, #tab-affiliations-and-links .field-multiple-table tr.odd
+.form-item, #tab-affiliations-and-links .field-multiple-table tr.even .form-item {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 592, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-titles
+.field-multiple-table td, #tab-person-type-and-dept
+.field-multiple-table td, #tab-education-and-training
+.field-multiple-table td, #tab-expertise
+.field-multiple-table td, #tab-affiliations-and-links .field-multiple-table td {
+  padding: 0;
+}
+
+/* line 600, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#tab-education-and-training
+tbody tr:not(:first-child), #tab-affiliations-and-links tbody tr:not(:first-child) {
+  border-top: 4em solid transparent;
+}
+
 /*# sourceMappingURL=walnut.css.map */

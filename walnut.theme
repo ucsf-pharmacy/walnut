@@ -7,7 +7,7 @@ function walnut_preprocess_form_element(&$variables) {
 
   // put help text before field rather than after it
   // https://sarahcodes.medium.com/move-field-description-below-label-in-drupal-8-6c2c607164f6
-  $variables['description_display'] = 'before';
+  // $variables['description_display'] = 'before';
 
   // alter image alt text field help
   // previously: "Short description of the image used by screen readers and displayed when the image is not loaded. This is important for accessibility."
