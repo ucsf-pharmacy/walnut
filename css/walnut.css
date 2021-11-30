@@ -639,9 +639,10 @@ tbody tr:hover {
   margin: 3em 0;
   padding: .25em 1em;
   border: 1px solid #b8b8b8;
+  border-radius: 4px;
 }
 
-/* line 576, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 577, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .seven-details__wrapper > *:first-child, #tab-person-type-and-dept
 .seven-details__wrapper > *:first-child, #tab-education-and-training
@@ -650,7 +651,7 @@ tbody tr:hover {
   margin-top: 1em;
 }
 
-/* line 579, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 580, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .seven-details__wrapper > *:last-child, #tab-person-type-and-dept
 .seven-details__wrapper > *:last-child, #tab-education-and-training
@@ -659,7 +660,7 @@ tbody tr:hover {
   margin-bottom: 1em;
 }
 
-/* line 587, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 588, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .field-multiple-table tr.odd
 .form-item, #tab-titles
@@ -678,7 +679,7 @@ tbody tr:hover {
   margin-bottom: 2px;
 }
 
-/* line 592, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 593, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .field-multiple-table td, #tab-person-type-and-dept
 .field-multiple-table td, #tab-education-and-training
@@ -687,7 +688,7 @@ tbody tr:hover {
   padding: 0;
 }
 
-/* line 600, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 601, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-education-and-training
 tbody tr:not(:first-child), #tab-affiliations-and-links tbody tr:not(:first-child) {
   border-top: 4em solid transparent;

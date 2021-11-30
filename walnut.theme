@@ -13,6 +13,5 @@ function walnut_preprocess_form_element(&$variables) {
   // previously: "Short description of the image used by screen readers and displayed when the image is not loaded. This is important for accessibility."
   if ( isset( $variables['name'] ) && ( $variables['name'] == 'field_media_image[0][alt]' ) ) {
       $variables['description']['content'] = t('Also known as alt text, this helps search engines and some persons with disabilities to understand your image. Specify a short description of the image. If this is a headshot, use last name only. Details: <a href="https://ux.shopify.com/considerations-when-writing-alt-text-a9c1985a8204?gi=b4e97cd1a24b" target="_blank">Considerations when writing alt text (opens in a new tab or window)</a>.');
-      // $variables['description']['content'] = t('To help search engines and to enable some persons with disabilities to understand your image, specify a short description of the image. Details: <a href="https://ux.shopify.com/considerations-when-writing-alt-text-a9c1985a8204?gi=b4e97cd1a24b" target="_blank">Considerations when writing alt text (opens in new tab or window)</a>.');
   }
 }
