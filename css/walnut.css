@@ -620,4 +620,9 @@ tbody tr:hover {
   line-height: 1.2;
 }
 
+/* line 559, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+.layout-region-node-secondary > *:first-child {
+  margin-top: 10px;
+}
+
 /*# sourceMappingURL=walnut.css.map */
