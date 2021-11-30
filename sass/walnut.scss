@@ -3,6 +3,7 @@ $color-link-blue:                 #0071ad;
 $color-blue-10:                   #e8f4fa;
 $color-text-gray:                 #767676; // lightest accessible gray on white
 $color-black-77:                  #3b3b3b;
+$color-border:                    #b8b8b8; // taken from form.css
 
 
 :root{
@@ -364,7 +365,7 @@ fieldset:not(.fieldgroup).media-library-widget{
 {
   & > .fieldset-wrapper{
     .description{
-      display: none;
+      // display: none; // don't hide this, otherwise help text for name pronunciation will not appear
     }
   }
 }
@@ -546,4 +547,12 @@ tbody tr:hover{
     margin-bottom: 0;
     }
   }
+}
+
+#field_ucsfphps_namepronounce-media-library-wrapper{
+  padding: 1em;
+  border: 1px solid $color-border;
+}
+.toolbar a{
+  line-height: 1.2;
 }
