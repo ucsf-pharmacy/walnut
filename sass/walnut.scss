@@ -51,9 +51,6 @@ body{
     line-height: 1.4;
   }
 }
-label{
-  // margin: 0.5em 0;
-}
 #edit-actions{
   margin-bottom: 0;
 }
@@ -68,15 +65,16 @@ label{
 #search-block-form .form-item{
   margin: 0.5em 0;
 }
+// start - highlight help text aka description
 ul.tips
-,div.description
-,.form-item .description
+,form.node-form .form-item .description
 {
   color: $color-black-77;
-  margin: .25em 0;
+  margin: .25em 0 .25em -.5em;
   padding: .5em;
   background-color: $color-l6;
 }
+// end - highlight help text aka description
 [id*="description"]{
   margin: .25em 0;
 }
@@ -310,10 +308,6 @@ input.form-autocomplete
 .file-size{
   margin-right: var(--gap);
 }
-.entity-meta{
-  // removed to resolve vertical tabs problem on http://d8.docksal.site/feed/add/node_event
-  // margin: .75em 0;
-}
 tr{
   &.odd
   ,&.even
@@ -334,7 +328,7 @@ tr{
 {
   & > .fieldset-wrapper{
     .media-library-widget__toggle-weight{
-      display: none;
+      // display: none;
     }
   }
 }
@@ -361,18 +355,6 @@ fieldset:not(.fieldgroup).media-library-widget{
     }
   }
 }
-
-// hide "The maximum number of media items have been selected."
-.primary-media-flex-group
-,.media-library-widget
-{
-  & > .fieldset-wrapper{
-    .description{
-      // display: none; // don't hide this, otherwise help text for name pronunciation will not appear
-    }
-  }
-}
-
 .primary-media-flex-group{
   &:not(.fieldgroup){
     padding: 0;
@@ -550,11 +532,6 @@ tbody tr:hover{
     margin-bottom: 0;
     }
   }
-}
-
-#field_ucsfphps_namepronounce-media-library-wrapper{
-  padding: 1em;
-  border: 1px solid $color-border;
 }
 .toolbar a{
   line-height: 1.2;
