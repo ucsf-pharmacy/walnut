@@ -684,4 +684,14 @@ tbody tr, #tab-affiliations-and-links tbody tr {
   border-bottom: 4px solid #ffffff;
 }
 
+/* line 599, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#edit-field-credit-actions {
+  margin-bottom: 10px;
+}
+
+/* line 602, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#edit-field-credit-remove-button {
+  margin: 30px 0 0;
+}
+
 /*# sourceMappingURL=walnut.css.map */
