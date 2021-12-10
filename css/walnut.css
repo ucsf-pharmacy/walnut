@@ -694,4 +694,17 @@ tbody tr, #tab-affiliations-and-links tbody tr {
   margin: 30px 0 0;
 }
 
+/* line 605, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#edit-field-media-image-0-alt--description a:after
+, .edit-media-link:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background-image: url(../icons/external-link-square.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 3px 0;
+}
+
 /*# sourceMappingURL=walnut.css.map */
