@@ -1,11 +1,4 @@
-// settings and defaults
-$color-link-blue:                 #0071ad;
-$color-blue-10:                   #e8f4fa;
-$color-text-gray:                 #767676; // lightest accessible gray on white
-$color-black-77:                  #3b3b3b;
-$color-border:                    #b8b8b8; // taken from form.css
-$color-l6:                        #fef8e4; // light yellow
-
+@import "../../laurel/sass/_design-tokens-color-2021.scss";
 
 :root{
   --form-field-border-color: #b8b8b8;
@@ -69,10 +62,10 @@ body{
 ul.tips
 ,form.node-form .form-item .description
 {
-  color: $color-black-77;
+  color: $color-text;
   margin: .25em 0 .25em -.5em;
   padding: .5em;
-  background-color: $color-l6;
+  background-color: $color-l6-yellow;
 }
 // end - highlight help text aka description
 [id*="description"]{
@@ -87,7 +80,7 @@ ul.tips
   }
   thead{
     th{
-      color: $color-black-77;
+      color: $color-text;
       text-transform: none;
       padding: 0.5em 0;
       background: inherit;
@@ -102,7 +95,7 @@ ul.tips
 #node-ucsfpharmacy-person-edit-form{
   .form-item{
     label+div{
-      color: $color-text-gray;
+      color: $color-black-54;
     }
   }
 }
@@ -486,12 +479,12 @@ fieldset:not(.fieldgroup).media-library-widget{
   font-size: 1.2em;
 }
 .vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title{
-  color: $color-black-77;
+  color: $color-text;
 }
 
 // tables
 tbody tr:hover{
-  background-color: $color-blue-10;
+  background-color: $color-a6-blue;
 }
 .field-multiple-table{
   tr{
@@ -556,7 +549,7 @@ tbody tr:hover{
 {
   margin: 2em 0 2em -1em;
   padding: .25em 1em;
-  border: 1px solid $color-border;
+  border: 1px solid var(--form-field-border-color);
   border-radius: 4px;
   &:first-child{
     margin-top: 1em;
