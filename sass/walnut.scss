@@ -18,7 +18,13 @@ body{
 .region-content ul.term-reference-tree-level
 ,.term-reference-tree-level
 {
-  margin: 2px 0 0 -24px;
+  // margin: 2px 0 0 -24px;
+}
+.region-content{
+  ul:first-child.term-reference-tree-level{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 .field--widget-term-reference-tree{
   ul{
@@ -348,6 +354,14 @@ fieldset:not(.fieldgroup).media-library-widget{
     }
   }
 }
+.post-titles-and-post-type-flex-group{
+  &>legend:first-child+.fieldset-wrapper{
+    display: flex;
+    #edit-group-titles{
+      margin-right: 50px;
+    }
+  }
+}
 .primary-media-flex-group{
   &:not(.fieldgroup){
     padding: 0;
@@ -362,6 +376,8 @@ fieldset:not(.fieldgroup).media-library-widget{
   & > legend{
     display: none; // label for fieldset group
   }
+/*
+// commented out because it stopped working
   & > .fieldset-wrapper{
     gap: var(--gutter);
     display: flex;
@@ -393,6 +409,7 @@ fieldset:not(.fieldgroup).media-library-widget{
       }
     }
   }
+*/
 }
 
 // ief
