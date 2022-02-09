@@ -682,3 +682,6 @@ tbody tr:hover{
     }
   }
 }
+th#view-changed-table-column { // in /admin/content make the updated column wider so the line doesn't wrap
+  min-width: 16ch;
+}
