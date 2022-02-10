@@ -694,3 +694,11 @@ th#view-changed-table-column { // in /admin/content make the updated column wide
     margin: 0 1em 0 0;
   }
 }
+
+// start - resolve problem in off-campus.base.css in which display is set to block
+#drupal-off-canvas ul li
+,#drupal-off-canvas ol li
+{
+  display: inherit;
+}
+// end - resolve problem in off-campus.base.css in which display is set to block

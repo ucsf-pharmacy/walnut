@@ -776,4 +776,10 @@ th#view-changed-table-column {
   margin: 0 1em 0 0;
 }
 
+/* line 699, ../../../../../Users/frankfarm/Documents/Git/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+#drupal-off-canvas ul li
+, #drupal-off-canvas ol li {
+  display: inherit;
+}
+
 /*# sourceMappingURL=walnut.css.map */
