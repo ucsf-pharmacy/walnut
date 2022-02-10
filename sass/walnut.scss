@@ -57,12 +57,20 @@ body{
 }
 .form--inline
 ,#edit-header
-,.form-wrapper
+,.form-wrapper:not(.filter-help):not(.filter-guidelines)
 {
   margin-bottom: 2em;
 }
+.field--name-field-event-moreinfo
+,.field--name-field-event-sponsors
+,.field--name-field-event-audience
+,.field--name-field-chunks
+{
+  border: 1px solid #c0c0c0;
+  padding: 0px 18px 6px;
+  background-color: #fcfcfa;
+}
 .form-wrapper{
-  // margin: 0.5em 0;
   label
   ,legend span
   ,strong
@@ -203,11 +211,6 @@ ul.tips
   }
   #field-event-datetime-values th{
     display: none;
-  }
-  #edit-field-event-moreinfo-wrapper{
-    border: 1px solid #c0c0c0;
-    padding: 0px 18px 6px;
-    background-color: #fcfcfa;
   }
   .edit-field-organization-wrapper{
     margin-bottom: 3em;
@@ -684,4 +687,10 @@ tbody tr:hover{
 }
 th#view-changed-table-column { // in /admin/content make the updated column wider so the line doesn't wrap
   min-width: 16ch;
+}
+.smartdate--widget .allday-label{
+  margin: 1.2em 4em 0.6em 0;
+  input{
+    margin: 0 1em 0 0;
+  }
 }
