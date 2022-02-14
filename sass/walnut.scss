@@ -20,6 +20,8 @@ body{
 {
   // margin: 2px 0 0 -24px;
 }
+.term-reference-tree-level{
+}
 .region-content{
   ul:first-child.term-reference-tree-level{
     margin-top: 10px;
@@ -33,11 +35,11 @@ body{
     }
   }
 }
-.term-reference-tree-button {
-  visibility: hidden;
-}
-.no-term-reference-tree-button {
-  background-color: transparent;
+.term-reference-tree-button
+,.no-term-reference-tree-button
+,#field_media-media-library-wrapper--description
+{
+  display: none;
 }
 
 
@@ -57,7 +59,7 @@ body{
 }
 .form--inline
 ,#edit-header
-,.form-wrapper:not(.filter-help):not(.filter-guidelines)
+// ,.form-wrapper:not(.filter-help):not(.filter-guidelines):not(.media-library-selection):not(.media-library-widget)
 {
   margin-bottom: 2em;
 }
@@ -416,6 +418,35 @@ fieldset:not(.fieldgroup).media-library-widget{
   & > legend{
     display: none; // label for fieldset group
   }
+  & > .fieldset-wrapper{
+    /*
+    display: grid;
+    grid-template-columns: 220px minmax(300px,auto) minmax(350px,auto);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    */
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+    .field--name-field-caption{
+      max-width: 390px;
+      div{ 
+        margin: 0;
+      }
+    }
+  }
+  .media-library-selection{
+    margin: 0;
+    .media-library-item--grid{
+      padding: 0;
+      width: 100%;    
+      .field--name-thumbnail{
+        background-color: transparent;
+        img{
+          height: auto;
+        }
+      }
+    }
+  }
 /*
 // commented out because it stopped working
   & > .fieldset-wrapper{
@@ -499,6 +530,9 @@ fieldset:not(.fieldgroup).media-library-widget{
 .layout-region{
   & > .form-wrapper{
     margin-bottom: 36px;
+    &.primary-media-flex-group{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -545,6 +579,14 @@ tbody tr:hover{
 }
 .field-multiple-table{
   tr{
+    td{
+      padding-top: 0;
+      padding-bottom: 0;
+      .form-item{
+        margin-top: 0;
+        margin-bottom: 1px;
+      }
+    }
     td:nth-child(2)
     ,td:nth-child(3)
     {
@@ -554,11 +596,13 @@ tbody tr:hover{
 }
 
 .field--widget-media-library-widget{
+  max-width: 220px;
   fieldset:not(.fieldgroup){
     border: none;
     &.media-library-widget{
       padding: 0;
       margin-bottom: 0;
+      background-color: transparent;
     }
     & > legend{
       text-transform: none;
@@ -678,10 +722,12 @@ tbody tr:hover{
       background-image: url(../icons/external-link-square-hover.svg);
     }
     a[target]:after{
-      background-image: url(../icons/external-link-in-new-tab-square.svg);
+      background-image: url(../icons/external-link-in-new-tab.svg);
+      width: 47px;
     }
     a[target]:hover:after{
-      background-image: url(../icons/external-link-in-new-tab-square-hover.svg);
+      background-image: url(../icons/external-link-in-new-tab-hover.svg);
+      width: 47px;
     }
   }
 }
