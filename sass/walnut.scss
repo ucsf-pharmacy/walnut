@@ -52,6 +52,9 @@ body{
     line-height: 1.4;
   }
 }
+#edit-actions{
+  margin-top: 36px;
+}
 #edit-actions
 ,#edit-field-ucsfphps-whatido-0-format
 {
@@ -759,3 +762,30 @@ th#view-changed-table-column { // in /admin/content make the updated column wide
     margin-top: 1em;
   }
 }
+
+// start - override node.module.css
+@media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px){
+  .layout-region-node-main{
+    padding-right: 0;
+  }
+  .layout-region-node-main
+  ,.layout-region-node-secondary
+  {
+    float: none;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px), (orientation: landscape) and (min-device-height: 1200px){
+  .layout-region-node-main{
+    padding-right: 2em;
+  }
+  .layout-region-node-main{
+    float: left;
+    width: 70%;
+  }
+  .layout-region-node-secondary {
+    float: right;
+    width: 30%;
+  }
+}
+// end - override node.module.css
