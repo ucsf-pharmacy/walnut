@@ -689,9 +689,14 @@ tbody tr:hover{
 #tab-education-and-training
 ,#tab-affiliations-and-links
 {
-  tbody tr {
-    background-color: #f2f2f0;
-    border-bottom: 4px solid #ffffff;
+  tbody{
+    tr{
+      background-color: #f2f2f0;
+      border-bottom: 25px solid #ffffff;
+      td{
+        padding: 6px 0 8px;
+      }
+    }
   }
 }
 // end - add background color and border to multivalue items so that they are more easily distinguished amongst multiple items
@@ -748,3 +753,9 @@ th#view-changed-table-column { // in /admin/content make the updated column wide
   display: inherit;
 }
 // end - resolve problem in off-campus.base.css in which display is set to block
+
+.field-multiple-table{
+  tr+tr{
+    margin-top: 1em;
+  }
+}
