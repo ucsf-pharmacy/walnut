@@ -121,7 +121,7 @@ ul.tips
   color: $color-text;
   margin: .25em 0 .25em -.5em;
   padding: .5em;
-  background-color: $color-l6-yellow;
+  // background-color: $color-l6-yellow;
 }
 // end - highlight help text aka description
 [id*="description"]{
@@ -176,6 +176,9 @@ ul.tips
       font-size: 1.5rem; // make certain buttons larger so they are easier to select
     }
   }
+}
+.form-item {
+  margin: 3em 0;
 }
 .form-item-title-0-value{
   input{
@@ -313,6 +316,17 @@ input.form-autocomplete
 ,textarea.form-textarea
 {
   line-height: 1.45;
+  border: 1px solid transparent;
+  box-shadow: inset 0 1px 3px #ccc;
+  &:hover{
+    box-shadow: inset 0 1px 3px #aaa;
+  }
+  &:focus
+  ,&:active
+  {
+    border: 1px solid #b8b8b8;
+    box-shadow: inset 0 1px 3px #999;
+  }
 }
 .form-item-field-article-image-0{
   .description{
@@ -642,6 +656,7 @@ tbody tr:hover{
 }
 // end - https://piccalil.li/quick-tip/add-scroll-margin-to-all-elements-which-can-be-targeted/
 // start - add a border around these fields or fieldgroups so that it's easier to understand what parts of the form go with what
+/*
 #tab-titles .seven-details__wrapper > *
 ,#tab-person-type-and-dept .seven-details__wrapper > *
 ,#tab-education-and-training .form-type-entity-autocomplete
@@ -663,6 +678,7 @@ tbody tr:hover{
   }
 }
 // end - add a border around these fields or fieldgroups so that it's easier to understand what parts of the form go with what
+*/
 .field--type-entity-reference-revisions{
   .form-wrapper{
     margin: 0.75em 0;
@@ -695,7 +711,7 @@ tbody tr:hover{
   tbody{
     tr{
       background-color: #f2f2f0;
-      border-bottom: 25px solid #ffffff;
+      border-bottom: 25px solid #fcfcfa;
       td{
         padding: 6px 0 8px;
       }
