@@ -150,8 +150,14 @@ ul.tips
 
 #node-ucsfpharmacy-person-edit-form{
   .form-item{
+    margin: 0;
     label+div{
       color: $color-black-54;
+    }
+    div:not(.form--inline){
+      & + .form-item{
+        margin-top: 3em;
+      }
     }
   }
 }
@@ -181,12 +187,6 @@ ul.tips
   margin-top: 1em;
 }
 .form-item {
-  margin: 0;
-  div:not(.form--inline){
-    & + .form-item{
-      margin-top: 3em;
-    }
-  }
 }
 .form-item-title-0-value{
   input{
