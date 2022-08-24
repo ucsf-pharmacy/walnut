@@ -1,4 +1,4 @@
-@import "../../laurel/sass/_design-color-2021.scss";
+@import "../../laurel/sass/_design-color-assignments.scss";
 
 :root{
   --form-field-border-color: #b8b8b8;
@@ -66,8 +66,7 @@ body{
 {
   margin-bottom: 2em;
 }
-.field--name-field-event-moreinfo
-,.field--name-field-event-sponsors
+.field--name-field-event-sponsors
 ,.field--name-field-event-audience
 ,.field--name-field-chunks
 {
@@ -118,7 +117,7 @@ body{
 ul.tips
 ,form.node-form .form-item .description
 {
-  color: $color-text;
+  color: var(--color-text);
   margin: .25em 0 .25em -.5em;
   padding: .5em;
   // background-color: $color-l6-yellow;
@@ -136,7 +135,7 @@ ul.tips
   }
   thead{
     th{
-      color: $color-text;
+      color: var(--color-text);
       text-transform: none;
       padding: 0.5em 0;
       background: inherit;
@@ -213,7 +212,6 @@ ul.tips
 {
   .edit-group-dates
   ,.field--name-body
-  ,.field--name-field-event-moreinfo
   {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -595,7 +593,7 @@ fieldset:not(.fieldgroup).media-library-widget{
   font-size: 1.2em;
 }
 .vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title{
-  color: $color-text;
+  color: var(--color-text);
 }
 
 // tables

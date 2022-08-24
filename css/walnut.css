@@ -9,6 +9,54 @@ see _regions.scss or _design-color-assignments for examples.
 put only sass variable definitions in this file. do not put custom properties in this file.
 
 */
+/*
+hover tends to be orange
+focus tends to be yellow
+*/
+/* line 9, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/laurel/sass/_design-color-assignments.scss */
+:root {
+  --color-text:                            #21272a;
+  --color-input-textarea-bg:               #f8f8f9;
+  --color-link-border-link:                #006be9;
+  --color-link-border-visited:             #6c62d0;
+  --color-link-border-focus:               #d68600;
+  --color-link-bg-focus:                   #fed658;
+  --color-link-border-hover:               #fe8638;
+  --color-link-fg-active:                  #ffffff;
+  --color-link-bg-active:                  #fa6e1e;
+  --color-link-block-focus-bg:             #d68600;
+  --color-link-block-border-hover:         #fe8638;
+  --color-link-icon-after:                 #808285;
+  --color-link-icon-hover-after:           #086290;
+  --color-image-caption-bg:                #ededed;
+  --color-border-dark:                     #878d96;
+  --color-border-light:                    #e1e3e5;
+  --color-list-marker-subtle:              #caced2;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* line 36, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/laurel/sass/_design-color-assignments.scss */
+  :root {
+    --color-text:                            #e1e3e5;
+    --color-input-textarea-bg:               #21272a;
+    --color-link-border-link:                #3cb9f0;
+    --color-link-border-visited:             #8a8ce3;
+    --color-link-border-focus:               #d68600;
+    --color-link-bg-focus:                   #aa6012;
+    --color-link-border-hover:               #fe8638;
+    --color-link-fg-active:                  #ffffff;
+    --color-link-bg-active:                  #fa6e1e;
+    --color-link-block-focus-bg:             #fed658;
+    --color-link-block-border-hover:         #fe8638;
+    --color-link-icon-after:                 #e1e3e5;
+    --color-link-icon-hover-after:           #b8e6fa;
+    --color-image-caption-bg:                #4d4d4d;
+    --color-border-dark:                     #e1e3e5;
+    --color-border-light:                    #878d96;
+    --color-list-marker-subtle:              #caced2;
+  }
+}
+
 /* line 3, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 :root {
   --form-field-border-color: #b8b8b8;
@@ -69,8 +117,7 @@ body {
 }
 
 /* line 69, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
-.field--name-field-event-moreinfo
-, .field--name-field-event-sponsors
+.field--name-field-event-sponsors
 , .field--name-field-event-audience
 , .field--name-field-chunks {
   border: 1px solid #c0c0c0;
@@ -78,7 +125,7 @@ body {
   background-color: #fcfcfa;
 }
 
-/* line 79, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 78, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-wrapper label
 , .form-wrapper legend span
 , .form-wrapper strong
@@ -88,7 +135,7 @@ body {
   line-height: 1.2;
 }
 
-/* line 89, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 88, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-wrapper .description p
 , .form-wrapper .description ol
 , .form-wrapper .description ul {
@@ -96,12 +143,12 @@ body {
   padding: 0;
 }
 
-/* line 96, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 95, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-wrapper .description p:first-child {
   margin-top: 0;
 }
 
-/* line 104, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 103, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table
 .form-item label, #edit-field-ucsfphps-whatido-0-format .form-item label {
   font-weight: normal;
@@ -109,66 +156,66 @@ body {
   line-height: inherit;
 }
 
-/* line 110, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 109, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table
 .form-wrapper, #edit-field-ucsfphps-whatido-0-format .form-wrapper {
   margin-bottom: inherit;
 }
 
-/* line 114, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 113, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #search-block-form .form-item {
   margin: 0.5em 0;
 }
 
-/* line 118, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 117, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 ul.tips
 , form.node-form .form-item .description {
-  color: #21272a;
+  color: var(--color-text);
   margin: .25em 0 .25em -.5em;
   padding: .5em;
 }
 
-/* line 127, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 126, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 [id*="description"] {
   margin: .25em 0;
 }
 
-/* line 133, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 132, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table thead
 tr, .field-multiple-table tbody tr {
   border-bottom: none;
 }
 
-/* line 138, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 137, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table thead th {
-  color: #21272a;
+  color: var(--color-text);
   text-transform: none;
   padding: 0.5em 0;
   background: inherit;
   border: none;
 }
 
-/* line 147, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 146, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region-node-footer__content {
   border-top: none;
 }
 
-/* line 152, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 151, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #node-ucsfpharmacy-person-edit-form .form-item {
   margin: 0;
 }
 
-/* line 154, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 153, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #node-ucsfpharmacy-person-edit-form .form-item label + div {
   color: #767676;
 }
 
-/* line 158, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 157, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #node-ucsfpharmacy-person-edit-form .form-item div:not(.form--inline) + .form-item {
   margin-top: 3em;
 }
 
-/* line 171, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 170, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-post-edit-form
 .layout-region > .field--name-title
 , .node-post-edit-form
@@ -183,24 +230,24 @@ tr, .field-multiple-table tbody tr {
   margin-bottom: 0;
 }
 
-/* line 181, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 180, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-form #edit-actions .button:not(.button--danger) {
   font-size: 1.5rem;
 }
 
-/* line 186, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 185, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #edit-submit-content {
   margin-top: 1em;
 }
 
-/* line 192, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 191, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-title-0-value input {
   font-size: 2em;
   padding: .1em .3em 0;
   width: 100%;
 }
 
-/* line 199, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 198, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-subtitle-0-value input {
   font-size: 1.5em;
   letter-spacing: .05px;
@@ -208,63 +255,60 @@ tr, .field-multiple-table tbody tr {
   width: 100%;
 }
 
-/* line 207, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 206, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-body-0-summary textarea {
   font-size: 1.25em;
 }
 
-/* line 214, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 213, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .edit-group-dates
 , .node-event-form
-.field--name-body
-, .node-event-form
-.field--name-field-event-moreinfo, .node-event-edit-form .edit-group-dates
-, .node-event-edit-form .field--name-body
-, .node-event-edit-form .field--name-field-event-moreinfo {
+.field--name-body, .node-event-edit-form .edit-group-dates
+, .node-event-edit-form .field--name-body {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
-/* line 221, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 219, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #edit-field-event-location-0, .node-event-edit-form #edit-field-event-location-0 {
   padding: 0;
   border: none;
 }
 
-/* line 225, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 223, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-location-0-title, .node-event-edit-form .form-item-field-event-location-0-title {
   margin-bottom: 0;
 }
 
-/* line 228, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 226, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #field-event-datetime-values th, .node-event-edit-form #field-event-datetime-values th {
   display: none;
 }
 
-/* line 231, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 229, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .edit-field-organization-wrapper, .node-event-edit-form .edit-field-organization-wrapper {
   margin-bottom: 3em;
 }
 
-/* line 234, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 232, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 fieldset#edit-field-event-location-0:not(.fieldgroup), .node-event-edit-form fieldset#edit-field-event-location-0:not(.fieldgroup) {
   padding: 0;
   border: none;
 }
 
-/* line 237, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 235, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit-form fieldset#edit-field-event-location-0:not(.fieldgroup) > legend {
   display: none;
 }
 
-/* line 241, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 239, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-audience-0-value, .node-event-edit-form .form-item-field-event-audience-0-value {
   margin: 2.5em 0 2em;
@@ -274,13 +318,13 @@ fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit
   border: 1px solid #bfbfba;
 }
 
-/* line 248, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 246, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 #field-event-datetime-values fieldset:not(.fieldgroup), .node-event-edit-form #field-event-datetime-values fieldset:not(.fieldgroup) {
   padding-top: 18px;
 }
 
-/* line 251, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 249, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .node-event-form
 .form-item-field-event-audience-0-value, .node-event-edit-form .form-item-field-event-audience-0-value {
   border: none;
@@ -288,86 +332,86 @@ fieldset#edit-field-event-location-0:not(.fieldgroup) > legend, .node-event-edit
   background-color: transparent;
 }
 
-/* line 257, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 255, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-add-form__preview {
   align-items: flex-start;
   background: unset;
 }
 
-/* line 262, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 260, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid:before {
   border: none;
 }
 
-/* line 265, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 263, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid article {
   border: 1px solid var(--form-field-border-color);
   margin-bottom: 4px;
 }
 
-/* line 268, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 266, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item--grid article > .media-library-item__preview {
   margin-bottom: 0;
   padding: 0;
 }
 
-/* line 274, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 272, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input[type='checkbox'] {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
 
-/* line 278, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 276, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input[type='checkbox'] + label {
   vertical-align: middle;
   margin-left: 5px;
 }
 
-/* line 283, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 281, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-type-radio .description, .form-type-checkbox .description {
   margin-left: 30px;
 }
 
-/* line 286, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 284, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup) {
   padding: 10px 18px 18px;
 }
 
-/* line 287, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 285, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup) > legend {
   position: initial;
 }
 
-/* line 292, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 290, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--name-field-gallery-items {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 295, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 293, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--name-field-gallery-items > .field__item {
   max-width: 100px;
   margin: 0 1px 1px 0;
 }
 
-/* line 301, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 299, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-item__preview .field--name-thumbnail {
   line-height: .8;
 }
 
-/* line 305, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 303, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-url {
   width: 100%;
 }
 
-/* line 308, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 306, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-article-date-0-value-date
 , .form-item-field-article-image-0-filefield-remote-url {
   margin: 0;
 }
 
-/* line 313, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 311, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input.form-autocomplete
 , input.form-text
 , input.form-tel
@@ -385,7 +429,7 @@ input.form-autocomplete
   box-shadow: inset 0 1px 3px #ccc;
 }
 
-/* line 329, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 327, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input.form-autocomplete:hover
 , input.form-text:hover
 , input.form-tel:hover
@@ -401,7 +445,7 @@ input.form-autocomplete:hover
   box-shadow: inset 0 1px 3px #aaa;
 }
 
-/* line 332, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 330, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 input.form-autocomplete:focus
 , input.form-autocomplete:active
 , input.form-text:focus
@@ -429,91 +473,91 @@ input.form-autocomplete:focus
   box-shadow: inset 0 1px 3px #999;
 }
 
-/* line 341, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 339, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item-field-article-image-0 .description br {
   display: inline;
 }
 
-/* line 346, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 344, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-preview {
   padding: 0 32px 32px 0;
 }
 
-/* line 349, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 347, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget {
   border: none;
   padding: 0;
 }
 
-/* line 354, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 352, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .form-item-field-media-image-0-alt {
   width: inherit;
   max-width: 70ch;
 }
 
-/* line 358, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 356, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .file--image {
   margin-bottom: var(--margin-fields);
 }
 
-/* line 361, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 359, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-widget-data .button {
   margin-left: 0;
 }
 
-/* line 365, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 363, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper {
   border: none;
 }
 
-/* line 367, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 365, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper summary {
   display: none;
 }
 
-/* line 370, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 368, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .image-data__crop-wrapper .seven-details__wrapper {
   padding: 0;
 }
 
-/* line 374, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 372, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .file-size {
   margin-right: var(--gap);
 }
 
-/* line 382, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 380, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 tr.odd .form-item.text-format-wrapper, tr.odd .form-item.form-type-textarea, tr.even .form-item.text-format-wrapper, tr.even .form-item.form-type-textarea {
   margin-bottom: 0;
 }
 
-/* line 403, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 401, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 fieldset:not(.fieldgroup).media-library-widget {
   padding: 0 18px;
 }
 
-/* line 410, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 408, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .media-library-item__remove {
   top: 16px;
   right: 0;
 }
 
-/* line 418, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 416, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-library-widget > .fieldset-wrapper .media-library-item__remove {
   top: 10px;
   right: 10px;
 }
 
-/* line 425, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 423, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .post-titles-and-post-type-flex-group > legend:first-child + .fieldset-wrapper {
   display: flex;
 }
 
-/* line 427, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 425, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .post-titles-and-post-type-flex-group > legend:first-child + .fieldset-wrapper #edit-group-titles {
   margin-right: 50px;
 }
 
-/* line 432, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 430, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group {
   border: none;
   /*
@@ -552,24 +596,24 @@ fieldset:not(.fieldgroup).media-library-widget {
 */
 }
 
-/* line 433, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 431, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group:not(.fieldgroup) {
   padding: 0;
   background-color: transparent;
 }
 
-/* line 438, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 436, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group fieldset.form-wrapper:not(.fieldgroup)
 , .primary-media-flex-group fieldset.form-item {
   margin: 0 0 1em 0;
 }
 
-/* line 443, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 441, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > legend {
   display: none;
 }
 
-/* line 446, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 444, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper {
   /*
     display: grid;
@@ -581,208 +625,208 @@ fieldset:not(.fieldgroup).media-library-widget {
   gap: var(--gutter);
 }
 
-/* line 455, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 453, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .field--name-field-caption {
   max-width: 390px;
 }
 
-/* line 457, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 455, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group > .fieldset-wrapper .field--name-field-caption div {
   margin: 0;
 }
 
-/* line 462, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 460, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group .media-library-selection {
   margin: 0;
 }
 
-/* line 464, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 462, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group .media-library-selection .media-library-item--grid {
   padding: 0;
   width: 100%;
 }
 
-/* line 467, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 465, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group .media-library-selection .media-library-item--grid .field--name-thumbnail {
   background-color: transparent;
 }
 
-/* line 469, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 467, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .primary-media-flex-group .media-library-selection .media-library-item--grid .field--name-thumbnail img {
   height: auto;
 }
 
-/* line 513, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 511, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table th {
   letter-spacing: 0.08em;
 }
 
-/* line 516, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 514, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table td {
   vertical-align: top;
 }
 
-/* line 519, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 517, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table input.button {
   margin-left: 0;
   margin-bottom: 0;
 }
 
-/* line 522, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 520, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table input.button:first-child {
   margin-right: 1em;
 }
 
-/* line 526, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 524, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table .field--name-field-media-image img
 , .ief-entity-table .field--name-field-media-audio-file audio {
   max-width: 150px;
 }
 
-/* line 531, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 529, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-entity-table .field--name-field-media-link {
   word-break: break-all;
 }
 
-/* line 537, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 535, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline) {
   margin-top: var(--gap);
 }
 
-/* line 539, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 537, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .ief-row-form .form-wrapper > div > div:not(.container-inline).form-type-date, .ief-row-form .form-wrapper > div > div:not(.container-inline).form-textarea-wrapper, .ief-row-form .form-wrapper > div > div:not(.container-inline).description {
   margin: 0;
 }
 
-/* line 552, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 550, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .content-header {
   padding-top: 0;
 }
 
-/* line 556, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 554, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region > .form-wrapper {
   margin-bottom: 36px;
 }
 
-/* line 558, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 556, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region > .form-wrapper.primary-media-flex-group {
   margin-bottom: 0;
 }
 
-/* line 568, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 566, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .display-modes .block-system-main-block th:first-child {
   width: 25ch;
 }
 
-/* line 577, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 575, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-collapse-enabled .tabs {
   max-height: unset;
 }
 
-/* line 580, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 578, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-horizontal {
   left: 4px;
   width: calc( 100% - 4px);
 }
 
-/* line 584, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 582, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .is-horizontal .tabs__tab.is-active
 , .is-horizontal .tabs.primary .tabs__tab.is-active
 , [dir="rtl"] .is-horizontal .tabs.primary .tabs__tab.is-active {
   border-bottom: 1px solid #fff;
 }
 
-/* line 589, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 587, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item a {
   padding: 10px 15px;
   line-height: 1.4;
 }
 
-/* line 593, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 591, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item.is-selected a {
   padding-left: 15px;
   font-size: 1.2em;
 }
 
-/* line 597, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 595, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .vertical-tabs__menu-item.is-selected .vertical-tabs__menu-item-title {
-  color: #21272a;
+  color: var(--color-text);
 }
 
-/* line 602, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 600, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 tbody tr:hover {
   background-color: #e6eef6;
 }
 
-/* line 607, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 605, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table tr td {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 610, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 608, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table tr td .form-item {
   margin-top: 0;
   margin-bottom: 1px;
 }
 
-/* line 615, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 613, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table tr td:nth-child(2)
 , .field-multiple-table tr td:nth-child(3) {
   padding-right: 0;
 }
 
-/* line 623, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 621, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget {
   max-width: 220px;
 }
 
-/* line 625, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 623, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup) {
   border: none;
 }
 
-/* line 627, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 625, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup).media-library-widget {
   padding: 0;
   margin-bottom: 0;
   background-color: transparent;
 }
 
-/* line 632, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 630, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--widget-media-library-widget fieldset:not(.fieldgroup) > legend {
   text-transform: none;
   letter-spacing: 0;
 }
 
-/* line 638, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 636, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .media-form .field--name-status {
   margin-top: 0;
 }
 
-/* line 644, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 642, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 [id^="field-event-audience-values"].field-multiple-table td {
   padding: 5px 6px;
 }
 
-/* line 647, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 645, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 [id^="field-event-audience-values"].field-multiple-table tr.odd .form-item
 , [id^="field-event-audience-values"].field-multiple-table tr.even .form-item {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 655, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 653, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .toolbar a {
   line-height: 1.2;
 }
 
-/* line 658, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 656, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .layout-region-node-secondary > *:first-child {
   margin-top: 10px;
 }
 
-/* line 662, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 660, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 [id] {
   scroll-margin-top: 2ex;
 }
@@ -810,12 +854,12 @@ tbody tr:hover {
 }
 // end - add a border around these fields or fieldgroups so that it's easier to understand what parts of the form go with what
 */
-/* line 691, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 689, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field--type-entity-reference-revisions .form-wrapper {
   margin: 0.75em 0;
 }
 
-/* line 704, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 702, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .field-multiple-table tr.odd
 .form-item, #tab-titles
@@ -828,37 +872,37 @@ tbody tr:hover {
   margin-bottom: 2px;
 }
 
-/* line 709, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 707, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-titles
 .field-multiple-table td, #tab-person-type-and-dept .seven-details__wrapper
 .field-multiple-table td, #tab-expertise .seven-details__wrapper .field-multiple-table td {
   padding: 0;
 }
 
-/* line 720, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 718, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-education-and-training
 tbody tr, #tab-affiliations-and-links tbody tr {
   background-color: #f2f2f0;
   border-bottom: 25px solid #fcfcfa;
 }
 
-/* line 723, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 721, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #tab-education-and-training
 tbody tr td, #tab-affiliations-and-links tbody tr td {
   padding: 6px 0 8px;
 }
 
-/* line 730, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 728, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #edit-field-credit-actions {
   margin-bottom: 10px;
 }
 
-/* line 733, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 731, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #edit-field-credit-remove-button {
   margin: 30px 0 0;
 }
 
-/* line 742, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 740, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item .description
 a:after, .form-item .edit-media-link a:after {
   content: '';
@@ -871,58 +915,58 @@ a:after, .form-item .edit-media-link a:after {
   background-position: 3px 0;
 }
 
-/* line 753, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 751, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item .description
 a:hover:after, .form-item .edit-media-link a:hover:after {
   background-image: url(../icons/external-link-square-hover.svg);
 }
 
-/* line 756, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 754, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item .description
 a[target]:after, .form-item .edit-media-link a[target]:after {
   background-image: url(../icons/external-link-in-new-tab.svg);
   width: 47px;
 }
 
-/* line 760, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 758, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .form-item .description
 a[target]:hover:after, .form-item .edit-media-link a[target]:hover:after {
   background-image: url(../icons/external-link-in-new-tab-hover.svg);
   width: 47px;
 }
 
-/* line 766, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 764, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 th#view-changed-table-column {
   min-width: 16ch;
 }
 
-/* line 769, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 767, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .smartdate--widget .allday-label {
   margin: 1.2em 4em 0.6em 0;
 }
 
-/* line 771, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 769, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .smartdate--widget .allday-label input {
   margin: 0 1em 0 0;
 }
 
-/* line 777, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 775, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 #drupal-off-canvas ul li
 , #drupal-off-canvas ol li {
   display: inherit;
 }
 
-/* line 785, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+/* line 783, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
 .field-multiple-table tr + tr {
   margin-top: 1em;
 }
 
 @media screen and (min-width: 780px), (orientation: landscape) and (min-device-height: 780px) {
-  /* line 792, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+  /* line 790, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
   .layout-region-node-main {
     padding-right: 0;
   }
-  /* line 795, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+  /* line 793, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
   .layout-region-node-main
 , .layout-region-node-secondary {
     float: none;
@@ -931,16 +975,16 @@ th#view-changed-table-column {
 }
 
 @media screen and (min-width: 1200px), (orientation: landscape) and (min-device-height: 1200px) {
-  /* line 803, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+  /* line 801, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
   .layout-region-node-main {
     padding-right: 2em;
   }
-  /* line 806, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+  /* line 804, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
   .layout-region-node-main {
     float: left;
     width: 70%;
   }
-  /* line 810, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
+  /* line 808, ../../../../../Users/frankfarm/drupal8/docroot/themes/contrib/walnut/sass/walnut.scss */
   .layout-region-node-secondary {
     float: right;
     width: 30%;
